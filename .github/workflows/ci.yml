@@ -79,7 +79,6 @@ jobs:
       - name: Push Docker image
         run: |
           docker push ghcr.io/${{ github.repository_owner }}/devops-docker-ci:latest
-          docker push ghcr.io/${{ github.repository_owner }}/devops-docker-ci:${{ github.sha }}
           if [[ "${GITHUB_REF}" == refs/tags/v* ]]; then
             VERSION=${GITHUB_REF#refs/tags/}
             docker tag $IMAGE_NAME:${{ github.sha }} $IMAGE_NAME:$VERSION
