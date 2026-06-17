@@ -77,6 +77,5 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push $IMAGE_NAME:latest
-          docker push $IMAGE_NAME:${{ github.sha }}
-          
+          docker push ghcr.io/${{ github.repository_owner }}/devops-docker-ci:latest
+          docker push ghcr.io/${{ github.repository_owner }}/devops-docker-ci:${{ github.sha }}
