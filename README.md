@@ -13,4 +13,4 @@ GitHub Actions
    ├── Tests
    ├── Lint
    ├── Docker Build
-   └── Trivy Security Scan
+   └── Trivy Security Scan# devops-docker-ci
