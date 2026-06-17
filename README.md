@@ -15,4 +15,8 @@ GitHub Actions
    ├── Docker Build
    └── Trivy Security Scan
 
+## Security
 
+A pipeline executa Trivy para análise de vulnerabilidades da imagem.
+
+Atualmente algumas vulnerabilidades críticas são herdadas da imagem base Debian e são reportadas pelo scanner para acompanhamento.
