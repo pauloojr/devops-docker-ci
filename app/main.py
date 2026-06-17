@@ -10,10 +10,7 @@ def health():
 
 @app.get("/products")
 def products():
-    return jsonify([
-        {"id": 1, "name": "Keyboard"},
-        {"id": 2, "name": "Mouse"}
-    ]), 200
+    return jsonify([{"id": 1, "name": "Keyboard"}, {"id": 2, "name": "Mouse"}]), 200
 
 
 if __name__ == "__main__":
